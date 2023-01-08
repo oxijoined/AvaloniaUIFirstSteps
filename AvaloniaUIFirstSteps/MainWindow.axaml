@@ -1,0 +1,182 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="1034" d:DesignHeight="738"
+		Width="1034" Height="738"
+		CanResize="False"
+		Background="Black"
+        x:Class="AvaloniaUIFirstSteps.MainWindow">
+	<Grid ShowGridLines="False" ColumnDefinitions="* 5*" RowDefinitions="10* *">
+		<Grid Grid.Row="0" Background="#161616">
+			<!-- LeftPanel -->
+			<StackPanel Orientation="Vertical">
+				<Border HorizontalAlignment="Center" Width="125" Height="125" CornerRadius="25" Margin="0 15 0 0">
+					<Border.Background>
+						<ImageBrush Source="C:\Users\oxidev\Desktop\AvaloniaUIFirstSteps\AvaloniaUIFirstSteps\Images\At-Least-I-Look-Cool.png" Stretch="UniformToFill"/>
+					</Border.Background>
+				</Border>
+				<TextBlock Text="Anna Maria M" HorizontalAlignment="Center" Margin="0 15 0 0" FontSize="13" Foreground="#aca8a8"/>
+				<TextBlock Text="@annamaria" HorizontalAlignment="Center" Margin="0 0 0 0" FontSize="12" Foreground="#aca8a8"/>
+				<TextBlock Text="Your Library 📚" HorizontalAlignment="Left" Margin="35 15 0 0" FontSize="12" Foreground="#aca8a8" TextAlignment="Left"/>
+				<TextBlock Text="Made For you" HorizontalAlignment="Left" Margin="35 15 0 0" FontSize="9" Foreground="#aca8a8" TextAlignment="Left"/>
+				<TextBlock Text="Recently Played" HorizontalAlignment="Left" Margin="35 15 0 0" FontSize="9" Foreground="#aca8a8" TextAlignment="Left"/>
+				<TextBlock Text="Liked Songs" HorizontalAlignment="Left" Margin="35 15 0 0" FontSize="9" Foreground="#aca8a8" TextAlignment="Left"/>
+				<TextBlock Text="Album" HorizontalAlignment="Left" Margin="35 15 0 0" FontSize="9" Foreground="#aca8a8" TextAlignment="Left"/>
+				<TextBlock Text="Artist" HorizontalAlignment="Left" Margin="35 15 0 0" FontSize="9" Foreground="#aca8a8" TextAlignment="Left"/>
+				<TextBlock Text="Podcast" HorizontalAlignment="Left" Margin="35 15 0 0" FontSize="9" Foreground="#aca8a8" TextAlignment="Left"/>
+				<TextBlock Text="Your Playlist 📚" HorizontalAlignment="Left" Margin="35 25 0 0" FontSize="12" Foreground="#aca8a8" TextAlignment="Left"/>
+				<TextBlock Text="Location Unknown" HorizontalAlignment="Left" Margin="35 15 0 0" FontSize="9" Foreground="#aca8a8" TextAlignment="Left"/>
+				<TextBlock Text="High five - Sigrid" HorizontalAlignment="Left" Margin="35 15 0 0" FontSize="9" Foreground="#aca8a8" TextAlignment="Left"/>
+				<TextBlock Text="Galaxy - Bolbbalgan" HorizontalAlignment="Left" Margin="35 15 0 0" FontSize="9" Foreground="#aca8a8" TextAlignment="Left"/>
+				<Separator Background="#1e1e1e" Height="2" Margin="0 125 0 0 "/>
+				<Button Content="🎶 New Playlist" HorizontalAlignment="Center" Margin="0 12 0 0" Background="#161616" Foreground="#adadad"/>
+			</StackPanel>
+		</Grid>
+
+		<Grid Grid.Row="1" Grid.ColumnSpan="2" Background="#161616">
+			<!-- BottomBar -->
+			<Grid ShowGridLines="False" ColumnDefinitions="* * * * * *">
+				<StackPanel Grid.Column="0" Orientation="Horizontal">
+					<Border Background="Red" CornerRadius="5" Width="50" Height="50" HorizontalAlignment="Left" Margin="15 0 0 0">
+						<Border.Background>
+							<ImageBrush Source="C:\Users\oxidev\Desktop\AvaloniaUIFirstSteps\AvaloniaUIFirstSteps\Images\R-14417987-1574114448-3608.jpg"/>
+						</Border.Background>
+						
+					</Border>
+					<StackPanel Orientation="Vertical" Width="75" Margin="15 0 0 0">
+						<TextBlock Text="Sasha Sloan" TextAlignment="Left" Margin="0 15 0 0" FontSize="10" Foreground="#aca8a8"/>
+						<TextBlock Text="Smiling When i Die" TextAlignment="Left" Margin="0 15 0 0" FontSize="8" Foreground="#aca8a8"/>
+					</StackPanel>
+				</StackPanel>
+				<StackPanel Grid.Column="1" Grid.ColumnSpan="2" Orientation="Horizontal" HorizontalAlignment="Center" Spacing="10">
+					<Button Content="⏪" Background="#e9003f"/>
+					<Button Content="⏯" Background="#e9003f"/> 
+					<Button Content="⏩" Background="#e9003f"/>
+					<TextBlock Text="1:45" VerticalAlignment="Center" FontSize="12" Foreground="#aca8a8"/>
+					<ProgressBar Width="350" Margin="15 0 0 0" Value="40" Foreground="#e9003f"/>
+					<TextBlock Text="3:45" VerticalAlignment="Center" FontSize="12" Foreground="#aca8a8"/>
+				</StackPanel>
+				
+				<StackPanel Grid.Column="4" Grid.ColumnSpan="2" VerticalAlignment="Center" Orientation="Horizontal">
+					<Separator Grid.Column="4" Width="15" Background="Transparent"/>
+					<TextBlock Margin="60 0 0 0" Text="🔊"/>
+					<ProgressBar Width="4" Margin="15 0 0 0" Value="40" Foreground="#e9003f"/>
+				</StackPanel>
+			</Grid>
+		</Grid>
+		<Grid Grid.Row="0" Grid.Column="1" Background="#141414">
+			<!-- Main Frame -->
+			<StackPanel Orientation="Horizontal" Width="350" Height="10" Margin="0 0 550 600" Spacing="30">
+				<TextBox Width="350" Height="10" Margin="50 0 0 0" CornerRadius="25" Watermark="🔎 Type song, artist or playlist" FontSize="10" VerticalContentAlignment="Center" Foreground="#aca8a8"/>
+				<TextBlock Text="Home" FontSize="10" Foreground="#c90338" FontWeight="Black"/>
+				<TextBlock Text="Browse" FontSize="10" Foreground="#aca8a8" FontWeight="Black"/>
+				<TextBlock Text="Radio" FontSize="10" Foreground="#aca8a8" FontWeight="Black"/>
+				<Border Background="Red" Width="35" Height="35" Margin="125 0 0 0" CornerRadius="10">
+					<Border.Background>
+						<ImageBrush Source="C:\Users\oxidev\Desktop\AvaloniaUIFirstSteps\AvaloniaUIFirstSteps\Images\R-14417987-1574114448-3608.jpg"/>
+					</Border.Background>
+					
+				</Border>
+				<TextBlock Text="Anna Maria M ✅" FontSize="10" Foreground="#aca8a8" FontWeight="Black" Margin="-20 0 0 0" VerticalAlignment="Center"/>
+			</StackPanel>
+			<Grid ShowGridLines="False" Margin="0 325 0 0" RowDefinitions="* * *" ColumnDefinitions="* * * *">
+				<StackPanel Orientation="Vertical" Grid.Row="1" Grid.ColumnSpan="2" Grid.RowSpan="2" Margin="30 -118 0 0" Spacing="15">
+					<TextBlock Text="Made for you" Foreground="#aca8a8" FontSize="12"/>
+					<TextBlock Text="The more you listen for better recomendation" FontSize="10" Foreground="#aca8a8"/>
+					<StackPanel Orientation="Horizontal" Spacing="15">
+						<Border HorizontalAlignment="Center" Width="125" Height="125" CornerRadius="25">
+							<Border.Background>
+								<ImageBrush Source="C:\Users\oxidev\Desktop\AvaloniaUIFirstSteps\AvaloniaUIFirstSteps\Images\At-Least-I-Look-Cool.png" Stretch="UniformToFill"/>
+							</Border.Background>
+						</Border>
+						<Border HorizontalAlignment="Center" Width="125" Height="125" CornerRadius="25">
+							<Border.Background>
+								<ImageBrush Source="C:\Users\oxidev\Desktop\AvaloniaUIFirstSteps\AvaloniaUIFirstSteps\Images\At-Least-I-Look-Cool.png" Stretch="UniformToFill"/>
+							</Border.Background>
+						</Border>
+					</StackPanel>
+					<StackPanel Orientation="Horizontal" Spacing="15">
+						<Border HorizontalAlignment="Center" Width="125" Height="125" CornerRadius="25">
+							<Border.Background>
+								<ImageBrush Source="C:\Users\oxidev\Desktop\AvaloniaUIFirstSteps\AvaloniaUIFirstSteps\Images\At-Least-I-Look-Cool.png" Stretch="UniformToFill"/>
+							</Border.Background>
+						</Border>
+						<Border HorizontalAlignment="Center" Width="125" Height="125" CornerRadius="25">
+							<Border.Background>
+								<ImageBrush Source="C:\Users\oxidev\Desktop\AvaloniaUIFirstSteps\AvaloniaUIFirstSteps\Images\At-Least-I-Look-Cool.png" Stretch="UniformToFill"/>
+							</Border.Background>
+						</Border>
+					</StackPanel>
+					
+				</StackPanel>
+				<StackPanel Grid.Column="2" Grid.ColumnSpan="2" Grid.RowSpan="3" Orientation="Vertical" Spacing="20">
+					<StackPanel Orientation="Vertical" Spacing="15">
+					<TextBlock Text="Recently Played" FontSize="12" Foreground="#aca8a8"/>
+					<TextBlock Text="Only for you for better live music" FontSize="10" Foreground="#aca8a8"/>
+					</StackPanel>
+					
+
+					<Border Background="#161616" Height="75" Width="400" HorizontalAlignment="Center" CornerRadius="15">
+						<StackPanel Orientation="Horizontal">
+							<Button Content="▶️" Margin="15 0 0 0"/>
+							<Border HorizontalAlignment="Center" Width="50" Height="50" CornerRadius="5" Margin="15 0 0 0">
+								<Border.Background>
+									<ImageBrush Source="C:\Users\oxidev\Desktop\AvaloniaUIFirstSteps\AvaloniaUIFirstSteps\Images\At-Least-I-Look-Cool.png" Stretch="UniformToFill"/>
+								</Border.Background>
+							</Border>
+							<StackPanel Orientation="Vertical" VerticalAlignment="Center" Margin="0 25 0 0">
+								<TextBlock Text="Maroon 5" Margin="5 -20 0 0" Foreground="#aca8a8" />
+								<TextBlock Text="Memories" Margin="5 0 0 0" FontSize="10" Foreground="#aca8a8"/>
+							</StackPanel>
+							<TextBlock Text="3:45" HorizontalAlignment="Right" VerticalAlignment="Center" Padding="125 0 0 0" Foreground="#aca8a8" FontSize="10"/>
+						</StackPanel>
+						</Border>
+					<Border Background="#161616" Height="75" Width="400" HorizontalAlignment="Center" CornerRadius="15">
+						<StackPanel Orientation="Horizontal">
+							<Button Content="▶️" Margin="15 0 0 0"/>
+							<Border HorizontalAlignment="Center" Width="50" Height="50" CornerRadius="5" Margin="15 0 0 0">
+								<Border.Background>
+									<ImageBrush Source="C:\Users\oxidev\Desktop\AvaloniaUIFirstSteps\AvaloniaUIFirstSteps\Images\At-Least-I-Look-Cool.png" Stretch="UniformToFill"/>
+								</Border.Background>
+							</Border>
+							<StackPanel Orientation="Vertical" VerticalAlignment="Center" Margin="0 25 0 0">
+								<TextBlock Text="Maroon 5" Margin="5 -20 0 0" Foreground="#aca8a8" />
+								<TextBlock Text="Memories" Margin="5 0 0 0" FontSize="10" Foreground="#aca8a8"/>
+							</StackPanel>
+							<TextBlock Text="3:45" HorizontalAlignment="Right" VerticalAlignment="Center" Padding="125 0 0 0" Foreground="#aca8a8" FontSize="10"/>
+						</StackPanel>
+					</Border>
+					<Border Background="#161616" Height="75" Width="400" HorizontalAlignment="Center" CornerRadius="15">
+						<StackPanel Orientation="Horizontal">
+							<Button Content="▶️" Margin="15 0 0 0"/>
+							<Border HorizontalAlignment="Center" Width="50" Height="50" CornerRadius="5" Margin="15 0 0 0">
+								<Border.Background>
+									<ImageBrush Source="C:\Users\oxidev\Desktop\AvaloniaUIFirstSteps\AvaloniaUIFirstSteps\Images\At-Least-I-Look-Cool.png" Stretch="UniformToFill"/>
+								</Border.Background>
+							</Border>
+							<StackPanel Orientation="Vertical" VerticalAlignment="Center" Margin="0 25 0 0">
+								<TextBlock Text="Maroon 5" Margin="5 -20 0 0" Foreground="#aca8a8" />
+								<TextBlock Text="Memories" Margin="5 0 0 0" FontSize="10" Foreground="#aca8a8"/>
+							</StackPanel>
+							<TextBlock Text="3:45" HorizontalAlignment="Right" VerticalAlignment="Center" Padding="125 0 0 0" Foreground="#aca8a8" FontSize="10"/>
+						</StackPanel>
+					</Border>
+				</StackPanel>
+				
+			</Grid>
+				<Grid Width="800" Height="200" VerticalAlignment="Top" Margin="100">
+				<Border HorizontalAlignment="Center" Width="800" Height="200" CornerRadius="25">
+					<Border.Background>
+						<ImageBrush Source="C:\Users\oxidev\Desktop\AvaloniaUIFirstSteps\AvaloniaUIFirstSteps\Images\At-Least-I-Look-Cool.png" Stretch="UniformToFill"/>
+					</Border.Background>
+				</Border>
+				<StackPanel Orientation="Vertical">
+					<TextBlock Text="Sasha Sloan" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="30" FontFamily="Miriam" FontSize="25" Foreground="White" FontWeight="Thin"></TextBlock>
+					<TextBlock Text="at least i look cool" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="30 0 0 0" FontFamily="Miriam" FontSize="40" Foreground="#aca8a8" FontWeight="Bold"/>
+				</StackPanel>
+			</Grid>
+		</Grid>
+		
+	</Grid>
+</Window>
